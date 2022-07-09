@@ -9,3 +9,14 @@ if len(word) % 2 == 0:
     print (word [1:3])
 elif len(word) % 2 != 0:
     print (word [3:4])
+
+## Задание 2
+# Напишите программу, которая последовательно запрашивает у пользователя числа (по одному за раз) 
+# и после первого нуля выводит сумму всех ранее введенных чисел.
+numbers = 0
+while True:
+    numbers_1 = (int(input("Введите число: ")))
+    if numbers_1 == 0:
+        break
+    else: numbers += numbers_1
+print ("Сумма: ", numbers)
